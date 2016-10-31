@@ -3,6 +3,8 @@ package com.hyphenate.chatuidemo.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chatuidemo.DemoHelper;
@@ -21,13 +23,13 @@ public class SplashActivity extends BaseActivity {
 		super.onCreate(arg0);
 		setContentView(R.layout.em_activity_splash);
 
-		/*RelativeLayout rootLayout = (RelativeLayout) findViewById(R.id.splash_root);
-		TextView versionText = (TextView) findViewById(R.id.tv_version);*/
+		RelativeLayout rootLayout = (RelativeLayout) findViewById(R.id.splash_root);
+		TextView versionText = (TextView) findViewById(R.id.tv_version);
 
-		//versionText.setText(getVersion());
+		versionText.setText(getVersion());
 		AlphaAnimation animation = new AlphaAnimation(0.3f, 1.0f);
 		animation.setDuration(1500);
-		//rootLayout.startAnimation(animation);
+		rootLayout.startAnimation(animation);
 	}
 
 	@Override
