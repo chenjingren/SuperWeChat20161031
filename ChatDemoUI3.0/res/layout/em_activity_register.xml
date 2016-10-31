@@ -7,14 +7,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1" >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/em_welcom_logo" />
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/common_title_black"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -28,28 +23,27 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="54dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="#fff" >
+             >
 
-            <ImageView
-                android:id="@+id/iv_username"
+            <TextView
+                android:id="@+id/tv_user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:text="@string/user_name"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:src="@drawable/em_icon_account" />
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"/>
 
             <EditText
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/iv_username"
-                android:background="@null"
-                android:hint="@string/user_name"
-                android:paddingLeft="10dip"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_user_name"
+                android:hint="你的用户名"
+                android:paddingLeft="10dp"
                 android:singleLine="true"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -57,30 +51,29 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="54dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:background="#fff" >
+            >
 
-            <ImageView
-                android:id="@+id/iv_password"
+            <TextView
+                android:id="@+id/tv_user_nick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:text="@string/nickname"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:src="@drawable/em_icon_pwd" />
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"/>
 
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/iv_password"
-                android:background="@null"
-                android:hint="@string/password"
+                android:hint="你的昵称"
                 android:inputType="textPassword"
-                android:paddingLeft="10dip"
+                android:layout_toRightOf="@id/tv_user_nick"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="27dp"
                 android:singleLine="true"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -88,30 +81,59 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="54dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:background="#fff" >
+            >
 
-            <ImageView
-                android:id="@+id/iv_password2"
+
+            <TextView
+                android:id="@+id/tv_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:text="@string/password"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:src="@drawable/em_icon_pwd" />
-
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"/>
             <EditText
                 android:id="@+id/confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/iv_password2"
-                android:background="@null"
-                android:hint="@string/confirmpassword"
+                android:hint="你的密码"
                 android:inputType="textPassword"
-                android:paddingLeft="10dip"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="27dp"
+                android:layout_toRightOf="@id/tv_password"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="27dp"
+                android:layout_toRightOf="@id/tv_confirm_password"
                 android:singleLine="true"
                 android:textSize="18sp" />
         </RelativeLayout>
