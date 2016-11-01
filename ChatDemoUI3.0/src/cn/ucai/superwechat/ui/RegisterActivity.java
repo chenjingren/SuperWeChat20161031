@@ -30,11 +30,13 @@ import com.hyphenate.exceptions.HyphenateException;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.ucai.superwechat.I;
 import cn.ucai.superwechat.R;
 import cn.ucai.superwechat.SuperWeChatHelper;
 import cn.ucai.superwechat.bean.Result;
 import cn.ucai.superwechat.data.NetDao;
 import cn.ucai.superwechat.db.OkHttpUtils;
+import cn.ucai.superwechat.utils.CommonUtils;
 import cn.ucai.superwechat.utils.MFGT;
 
 /**
@@ -117,14 +119,18 @@ public class RegisterActivity extends BaseActivity {
         NetDao.reqRegister(mContext, username, nick, pwd, new OkHttpUtils.OnCompleteListener<Result>() {
             @Override
             public void onSuccess(Result result) {
-                if (result!=null){
+                if (result==null){
+                    pd.dismiss();
+                }else {
                     if (result.isRetMsg()){
                         registerEMServer();
                     }else {
-                        unregisterAppServer();
+                        if(result.getRetCode() == I.MSG_REGISTER_USERNAME_EXISTS){
+                            CommonUtils.showLongToast(result.getRetCode());
+                        }else {
+                            unregisterAppServer();
+                        }
                     }
-                }else {
-                    unregisterAppServer();
                 }
             }
 
@@ -189,11 +195,11 @@ public class RegisterActivity extends BaseActivity {
         }).start();
     }
 
-
     @OnClick({R.id.iv_back, R.id.btn_register})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_back:
+                MFGT.finish(mContext);
                 break;
             case R.id.btn_register:
                 register();
