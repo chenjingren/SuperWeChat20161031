@@ -6,15 +6,42 @@
     android:background="@color/black"
     >
 
+    <TextView
+        android:id="@+id/tv_weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微信"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/em_add"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"/>
     <ImageView
         android:id="@+id/iv_back"
         android:layout_width="30dp"
         android:layout_height="40dp"
+        android:visibility="gone"
         android:src="@drawable/icon_back"
         android:layout_centerVertical="true"/>
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:text="12345"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:gravity="center"
         />
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
