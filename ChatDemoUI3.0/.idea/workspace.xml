@@ -30,9 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c93c2e2-6593-4b25-af37-c3d2ab0561c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GuideActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GuideActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
     </list>
     <ignored path="ChatDemoUI3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="26.25">
-              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.5642994">
+              <caret line="438" column="50" selection-start-line="438" selection-start-column="50" selection-end-line="438" selection-end-column="50" />
               <folding>
                 <element signature="e#2836#2854#0" expanded="true" />
               </folding>
@@ -128,10 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuideActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GuideActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GuideActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61220825">
+            <state vertical-scroll-proportion="0.0">
               <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -2683,12 +2681,12 @@
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/adapter/GroupAdapter.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ImageGridFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/activity_guide.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/utils/MFGT.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SplashActivity.java" />
         <option value="$PROJECT_DIR$/../easeui/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GuideActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -3530,16 +3528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="26.25">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="e#2836#2854#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/utils/MFGT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3571,10 +3559,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GuideActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61220825">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5642994">
+          <caret line="438" column="50" selection-start-line="438" selection-start-column="50" selection-end-line="438" selection-end-column="50" />
+          <folding>
+            <element signature="e#2836#2854#0" expanded="true" />
           </folding>
         </state>
       </provider>
