@@ -51,6 +51,7 @@
     <application
         android:name="cn.ucai.superwechat.DemoApplication"
         android:allowBackup="true"
+        android:theme="@style/horizontal_slide"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name">
         <activity
@@ -471,7 +472,10 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="3ecea51f560650b1ed8a4b99808f52e8" />
 
-        <activity android:name="cn.ucai.superwechat.ui.GuideActivity"></activity>
+        <activity android:name="cn.ucai.superwechat.ui.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide">
+        </activity>
     </application>
 
 </manifest>
