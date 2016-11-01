@@ -3,7 +3,7 @@ package cn.ucai.superwechat.ui;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.hyphenate.superwechat.R;
+import cn.ucai.superwechat.R;
 
 public class GuideActivity extends AppCompatActivity {
 
