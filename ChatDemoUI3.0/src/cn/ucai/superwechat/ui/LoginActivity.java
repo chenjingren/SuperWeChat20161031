@@ -13,6 +13,7 @@
  */
 package cn.ucai.superwechat.ui;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
@@ -30,6 +31,7 @@ import android.widget.Toast;
 
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
+import com.hyphenate.easeui.domain.User;
 import com.hyphenate.easeui.utils.EaseCommonUtils;
 
 import butterknife.BindView;
@@ -38,12 +40,16 @@ import butterknife.OnClick;
 import cn.ucai.superwechat.R;
 import cn.ucai.superwechat.SuperWeChatApplication;
 import cn.ucai.superwechat.SuperWeChatHelper;
+import cn.ucai.superwechat.bean.Result;
 import cn.ucai.superwechat.data.NetDao;
+import cn.ucai.superwechat.db.DbOpenHelper;
 import cn.ucai.superwechat.db.OkHttpUtils;
 import cn.ucai.superwechat.db.SuperWeChatDBManager;
+import cn.ucai.superwechat.db.UserDao;
 import cn.ucai.superwechat.utils.L;
 import cn.ucai.superwechat.utils.MD5;
 import cn.ucai.superwechat.utils.MFGT;
+import cn.ucai.superwechat.utils.ResultUtils;
 
 /**
  * Login screen
@@ -69,6 +75,7 @@ public class LoginActivity extends BaseActivity {
     String currentUsername;
     String currentPassword;
 
+    Activity mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +89,7 @@ public class LoginActivity extends BaseActivity {
         setContentView(R.layout.em_activity_login);
         ButterKnife.bind(this);
 
+        mContext =this;
         initView();
         setListener();
     }
@@ -195,13 +203,29 @@ public class LoginActivity extends BaseActivity {
     private void loginAPPServer() {
         NetDao.reqLogin(this, currentUsername, currentPassword, new OkHttpUtils.OnCompleteListener<String>() {
             @Override
-            public void onSuccess(String result) {
-                loginSuccessEMServer();
+            public void onSuccess(String s) {
+                L.e(TAG,"sss===="+s);
+                if (s!=null && s!=""){
+                    Result result = ResultUtils.getResultFromJson(s, User.class);
+                    if (result!=null && result.isRetMsg()){
+                        User user = (User) result.getRetData();
+                        if (user!=null){
+                            UserDao userDao = new UserDao(mContext);
+                            userDao.saveUser(user);
+                            SuperWeChatHelper.getInstance().setCurrentUser(user);
+                            loginSuccessEMServer();
+                        }
+                    }else {
+                        pd.dismiss();
+                        L.e(TAG,"login fail==="+result.getRetCode());
+                    }
+                }
             }
 
             @Override
             public void onError(String error) {
-
+                pd.dismiss();
+                L.e(TAG,"error==="+error);
             }
         });
     }

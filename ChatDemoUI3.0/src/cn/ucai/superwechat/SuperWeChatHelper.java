@@ -38,6 +38,7 @@ import cn.ucai.superwechat.ui.ChatActivity;
 import cn.ucai.superwechat.ui.MainActivity;
 import cn.ucai.superwechat.ui.VideoCallActivity;
 import cn.ucai.superwechat.ui.VoiceCallActivity;
+import cn.ucai.superwechat.utils.L;
 import cn.ucai.superwechat.utils.PreferenceManager;
 import com.hyphenate.easeui.controller.EaseUI;
 import com.hyphenate.easeui.controller.EaseUI.EaseEmojiconInfoProvider;
@@ -46,6 +47,7 @@ import com.hyphenate.easeui.controller.EaseUI.EaseUserProfileProvider;
 import com.hyphenate.easeui.domain.EaseEmojicon;
 import com.hyphenate.easeui.domain.EaseEmojiconGroupEntity;
 import com.hyphenate.easeui.domain.EaseUser;
+import com.hyphenate.easeui.domain.User;
 import com.hyphenate.easeui.model.EaseAtMessageHelper;
 import com.hyphenate.easeui.model.EaseNotifier;
 import com.hyphenate.easeui.model.EaseNotifier.EaseNotificationInfoProvider;
@@ -91,7 +93,8 @@ public class SuperWeChatHelper {
 	private static SuperWeChatHelper instance = null;
 	
 	private SuperWeChatModel demoModel = null;
-	
+
+    private User currentUser =null;
 	/**
      * sync groups status listener
      */
@@ -845,7 +848,7 @@ public class SuperWeChatHelper {
 	/**
 	 * update contact list
 	 * 
-	 * @param contactList
+	 * @param
 	 */
 	public void setContactList(Map<String, EaseUser> aContactList) {
 		if(aContactList == null){
@@ -917,7 +920,7 @@ public class SuperWeChatHelper {
 	 /**
      * update user list to cache and database
      *
-     * @param contactList
+     * @param
      */
     public void updateContactList(List<EaseUser> contactInfoList) {
          for (EaseUser u : contactInfoList) {
@@ -1240,4 +1243,16 @@ public class SuperWeChatHelper {
         easeUI.popActivity(activity);
     }
 
+    public User getCurrentUser() {
+        String username = EMClient.getInstance().getCurrentUser();
+        L.e(TAG,"currentUserName===="+username);
+        if (currentUser == null){
+            currentUser = new User(username);
+        }
+        return currentUser;
+    }
+
+    public void setCurrentUser(User currentUser) {
+        this.currentUser = currentUser;
+    }
 }
