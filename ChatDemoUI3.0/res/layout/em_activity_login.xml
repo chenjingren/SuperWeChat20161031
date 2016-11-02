@@ -34,7 +34,7 @@
                 android:textColor="@color/black"/>
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/et_username"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
@@ -65,7 +65,7 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"/>
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
