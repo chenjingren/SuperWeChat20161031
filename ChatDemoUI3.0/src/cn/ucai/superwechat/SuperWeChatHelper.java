@@ -374,7 +374,7 @@ public class SuperWeChatHelper {
         if(user == null && getRobotList() != null){
             user = getRobotList().get(username);
         }*/
-
+        user = getAppContactList().get(username);
         // if user is not in your contacts, set inital letter for him/her
         if(user == null){
             user = new User(username);
