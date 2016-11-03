@@ -1286,7 +1286,7 @@ public class SuperWeChatHelper {
 
     public void setAppContactList(Map<String, User> aContactList) {
         if(aContactList == null){
-            if (contactAppList != null) {
+            if (contactAppList != null || contactAppList.size()==0) {
                 contactAppList.clear();
             }
             return;
