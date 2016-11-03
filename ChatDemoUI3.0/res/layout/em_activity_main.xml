@@ -10,10 +10,11 @@
         android:id="@+id/layout_title"
         layout="@layout/common_title_black" />
     <cn.ucai.superwechat.widget.MFViewPager
-        android:id="@+id/layout_viewpage"
+        android:id="@+id/layout_view_page"
         android:layout_below="@id/layout_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingBottom="48dp">
     </cn.ucai.superwechat.widget.MFViewPager>
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,10 +27,12 @@
             android:layout_height="1dp"
             android:background="#d6dcdc" />
         <cn.ucai.superwechat.widget.DMTabHost
+            android:id="@+id/tab_host"
             android:layout_width="match_parent"
             android:layout_marginBottom="1dp"
             android:layout_height="50dp">
             <cn.ucai.superwechat.widget.DMTabButton
+                android:id="@+id/btn_weixin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -37,6 +40,7 @@
                 app:tabtext="@string/app_name">
             </cn.ucai.superwechat.widget.DMTabButton>
             <cn.ucai.superwechat.widget.DMTabButton
+                android:id="@+id/btn_contact"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -44,6 +48,7 @@
                 app:tabtext="@string/contacts">
             </cn.ucai.superwechat.widget.DMTabButton>
             <cn.ucai.superwechat.widget.DMTabButton
+                android:id="@+id/btn_discover"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -51,6 +56,7 @@
                 app:tabtext="@string/discover">
             </cn.ucai.superwechat.widget.DMTabButton>
             <cn.ucai.superwechat.widget.DMTabButton
+                android:id="@+id/btn_me"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
