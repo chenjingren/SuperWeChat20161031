@@ -1,6 +1,7 @@
 package cn.ucai.superwechat.ui;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
@@ -26,6 +27,8 @@ public class SplashActivity extends BaseActivity {
 	private static final int sleepTime = 2000;
 
 	Activity mContext;
+
+	Context context;
 
 	@Override
 	protected void onCreate(Bundle arg0) {

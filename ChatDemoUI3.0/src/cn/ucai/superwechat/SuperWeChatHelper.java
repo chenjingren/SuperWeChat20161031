@@ -95,6 +95,8 @@ public class SuperWeChatHelper {
 	private SuperWeChatModel demoModel = null;
 
     private User currentUser =null;
+
+    private Map<String,User> contactAppList;
 	/**
      * sync groups status listener
      */
@@ -1254,5 +1256,50 @@ public class SuperWeChatHelper {
 
     public void setCurrentUser(User currentUser) {
         this.currentUser = currentUser;
+    }
+
+    public void setAppContactList(Map<String, User> aContactList) {
+        if(aContactList == null){
+            if (contactAppList != null) {
+                contactAppList.clear();
+            }
+            return;
+        }
+        contactAppList = aContactList;
+    }
+
+    /**
+     * save single contact
+     */
+    public void saveAppContact(User user){
+        contactAppList.put(user.getMUserName(), user);
+        demoModel.saveAppContact(user);
+    }
+
+    /**
+     * get contact list
+     *
+     * @return
+     */
+    public Map<String, User> getAppContactList() {
+        if (isLoggedIn() && contactAppList == null) {
+            contactAppList = demoModel.getAppContactList();
+        }
+
+        // return a empty non-null object to avoid app crash
+        if(contactAppList == null){
+            return new Hashtable<String, User>();
+        }
+
+        return contactAppList;
+    }
+
+    public void updateAppContactList(List<User> contactInfoList) {
+        for (User u : contactInfoList) {
+            contactAppList.put(u.getMUserName(), u);
+        }
+        ArrayList<User> mList = new ArrayList<User>();
+        mList.addAll(contactAppList.values());
+        demoModel.saveAppContactList(mList);
     }
 }
