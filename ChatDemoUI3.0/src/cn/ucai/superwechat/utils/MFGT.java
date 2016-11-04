@@ -3,10 +3,12 @@ package cn.ucai.superwechat.utils;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.FragmentActivity;
 
 
 import cn.ucai.superwechat.R;
 import cn.ucai.superwechat.ui.MainActivity;
+import cn.ucai.superwechat.ui.SettingsActivity;
 
 
 public class MFGT {
@@ -33,5 +35,9 @@ public class MFGT {
     public static void startActivityForResult(Activity context,Intent intent,int requestCode){
         context.startActivityForResult(intent,requestCode);
         context.overridePendingTransition(R.anim.push_left_in,R.anim.push_left_out);
+    }
+
+    public static void gotoSettings(Activity activity) {
+        startActivity(activity, SettingsActivity.class);
     }
 }

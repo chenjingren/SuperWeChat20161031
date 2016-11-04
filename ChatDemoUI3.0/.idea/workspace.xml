@@ -55,14 +55,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/em_fragment_conversation_settings.xml" afterPath="$PROJECT_DIR$/res/layout/em_fragment_conversation_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/res/values-w820dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimens.xml" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/BaseActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/BaseActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/utils/MFGT.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/utils/MFGT.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SettingsFragment.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SettingsActivity.java" />
     </list>
     <ignored path="ChatDemoUI3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,10 +99,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SettingsActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SettingsActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32136446">
+            <state vertical-scroll-proportion="0.0">
               <caret line="324" column="17" selection-start-line="324" selection-start-column="17" selection-end-line="324" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -130,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonActivityUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommonActivityUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/utils/CommonActivityUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.04847397">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#410#411#0" expanded="true" />
@@ -3305,7 +3300,13 @@
       <option name="project" value="LOCAL" />
       <updated>1478242378148</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改SettingsFragment为SettingsActivity">
+      <created>1478242469156</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1478242469156</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3403,7 +3404,8 @@
     <MESSAGE value="注册环信时加密，在环信注册失败后，在APP服务器取消注册" />
     <MESSAGE value="添加MainActivity布局文件，修改MainActivity" />
     <MESSAGE value="添加个人中心布局及Fragment" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加个人中心布局及Fragment" />
+    <MESSAGE value="修改SettingsFragment为SettingsActivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改SettingsFragment为SettingsActivity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -3768,7 +3770,7 @@
         <state vertical-scroll-proportion="0.42156863">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
-            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3844,10 +3846,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/utils/CommonActivityUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <caret line="324" column="17" selection-start-line="324" selection-start-column="17" selection-end-line="324" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1537#1575#0" expanded="true" />
+            <element signature="e#3619#3642#0" expanded="true" />
+            <element signature="e#5378#5411#0" expanded="true" />
+            <element signature="e#13323#13372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/utils/CommonActivityUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04847397">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#410#411#0" expanded="true" />
@@ -3856,20 +3872,6 @@
             <element signature="e#525#526#0" expanded="true" />
             <element signature="e#573#574#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32136446">
-          <caret line="324" column="17" selection-start-line="324" selection-start-column="17" selection-end-line="324" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1537#1575#0" expanded="true" />
-            <element signature="e#3619#3642#0" expanded="true" />
-            <element signature="e#5378#5411#0" expanded="true" />
-            <element signature="e#13323#13372#0" expanded="true" />
           </folding>
         </state>
       </provider>
