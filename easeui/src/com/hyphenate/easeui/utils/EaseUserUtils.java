@@ -3,7 +3,7 @@ package com.hyphenate.easeui.utils;
 import android.content.Context;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import com.hyphenate.chat.EMClient;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.hyphenate.easeui.R;
@@ -96,5 +96,25 @@ public class EaseUserUtils {
             return userProvider.getAppUser(username);
         return null;
     }
+
+    public static void setCurrentAppUserAvatar(Context activity, ImageView imageView) {
+        String username = EMClient.getInstance().getCurrentUser();
+        setAppUserAvatar(activity,username,imageView);
+    }
+
+    public static void setCurrentAppUserNick(TextView textView) {
+        String username = EMClient.getInstance().getCurrentUser();
+        setAppUserNick(username,textView);
+    }
+
+    public static void setCurrentAppUserName(TextView textView) {
+        String username = EMClient.getInstance().getCurrentUser();
+        setAppUserName("微信号：",username,textView);
+    }
+
+    private static void setAppUserName(String suffix,String username, TextView textView) {
+        textView.setText(suffix + username);
+    }
+
 
 }
