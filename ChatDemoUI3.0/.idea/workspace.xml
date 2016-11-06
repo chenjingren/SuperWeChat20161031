@@ -51,14 +51,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c93c2e2-6593-4b25-af37-c3d2ab0561c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values-zh/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileFragment.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../easeui/src/com/hyphenate/easeui/utils/EaseUserUtils.java" afterPath="$PROJECT_DIR$/../easeui/src/com/hyphenate/easeui/utils/EaseUserUtils.java" />
     </list>
     <ignored path="ChatDemoUI3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,55 +94,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserProfileActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserProfileActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.27289048">
+              <caret line="325" column="41" selection-start-line="325" selection-start-column="41" selection-end-line="325" selection-end-column="41" />
               <folding>
-                <element signature="e#6370#6400#0" expanded="true" />
-                <element signature="e#6441#6478#0" expanded="true" />
-                <element signature="e#6480#6519#0" expanded="true" />
-                <element signature="e#6538#7501#0" expanded="true" />
-                <element signature="e#6848#6884#0" expanded="true" />
-                <element signature="e#7500#7501#0" expanded="true" />
-                <element signature="e#7647#7681#0" expanded="true" />
-                <element signature="e#7683#7713#0" expanded="true" />
-                <element signature="e#7735#9030#0" expanded="true" />
-                <element signature="e#8114#8445#0" expanded="true" />
-                <element signature="e#8244#8285#0" expanded="true" />
-                <element signature="e#8444#8445#0" expanded="true" />
-                <element signature="e#8556#8986#0" expanded="true" />
-                <element signature="e#8766#8810#0" expanded="true" />
-                <element signature="e#8985#8986#0" expanded="true" />
-                <element signature="e#9029#9030#0" expanded="true" />
-                <element signature="e#9713#9754#0" expanded="true" />
-                <element signature="e#9966#10007#0" expanded="true" />
-                <element signature="e#10308#10349#0" expanded="true" />
-                <element signature="method#uploadUserAvatar#0;class#UserProfileActivity#0" expanded="false" />
-                <element signature="e#12361#12396#0" expanded="true" />
-                <element signature="e#12398#12428#0" expanded="true" />
-                <element signature="e#12920#12965#0" expanded="true" />
-                <element signature="e#13133#13175#0" expanded="true" />
-                <element signature="method#Bitmap2Bytes#0;class#UserProfileActivity#0" expanded="false" />
-                <element signature="e#14166#14191#0" expanded="true" />
-                <element signature="e#14297#14311#0" expanded="true" />
-                <element signature="e#14313#15239#0" expanded="true" />
-                <element signature="e#14713#14754#0" expanded="true" />
-                <element signature="e#15001#15041#0" expanded="true" />
-                <element signature="e#15238#15239#0" expanded="true" />
-                <element signature="e#15259#15277#0" expanded="true" />
-                <element signature="e#15402#15448#0" expanded="true" />
+                <element signature="e#6569#6599#0" expanded="true" />
+                <element signature="e#6640#6677#0" expanded="true" />
+                <element signature="e#6679#6718#0" expanded="true" />
+                <element signature="e#6737#7700#0" expanded="true" />
+                <element signature="e#7047#7083#0" expanded="true" />
+                <element signature="e#7699#7700#0" expanded="true" />
+                <element signature="e#7846#7880#0" expanded="true" />
+                <element signature="e#7882#7912#0" expanded="true" />
+                <element signature="e#7934#9229#0" expanded="true" />
+                <element signature="e#8313#8644#0" expanded="true" />
+                <element signature="e#8443#8484#0" expanded="true" />
+                <element signature="e#8643#8644#0" expanded="true" />
+                <element signature="e#8755#9185#0" expanded="true" />
+                <element signature="e#8965#9009#0" expanded="true" />
+                <element signature="e#9184#9185#0" expanded="true" />
+                <element signature="e#9228#9229#0" expanded="true" />
+                <element signature="e#9912#9953#0" expanded="true" />
+                <element signature="e#10165#10206#0" expanded="true" />
+                <element signature="e#10507#10548#0" expanded="true" />
+                <element signature="e#11635#11670#0" expanded="true" />
+                <element signature="e#11672#11702#0" expanded="true" />
+                <element signature="e#12605#12647#0" expanded="true" />
+                <element signature="e#12872#12914#0" expanded="true" />
+                <element signature="e#14001#14884#0" expanded="true" />
+                <element signature="e#14223#14857#0" expanded="true" />
+                <element signature="e#14470#14515#0" expanded="true" />
+                <element signature="e#14683#14725#0" expanded="true" />
+                <element signature="e#14856#14857#0" expanded="true" />
+                <element signature="e#14883#14884#0" expanded="true" />
+                <element signature="e#15936#15961#0" expanded="true" />
+                <element signature="e#16067#16081#0" expanded="true" />
+                <element signature="e#16083#17009#0" expanded="true" />
+                <element signature="e#16483#16524#0" expanded="true" />
+                <element signature="e#16771#16811#0" expanded="true" />
+                <element signature="e#17008#17009#0" expanded="true" />
+                <element signature="e#17029#17047#0" expanded="true" />
+                <element signature="e#17172#17218#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuperWeChatDBManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SuperWeChatDBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36983842">
-              <caret line="371" column="13" selection-start-line="371" selection-start-column="13" selection-end-line="371" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="376" column="0" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/data/NetDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -2782,8 +2790,8 @@
         <option value="$PROJECT_DIR$/../easeui/src/com/hyphenate/easeui/utils/EaseUserUtils.java" />
         <option value="$PROJECT_DIR$/res/values-zh/strings.xml" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileFragment.java" />
-        <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java" />
+        <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java" />
       </list>
     </option>
   </component>
@@ -2959,25 +2967,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values-zh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChatDemoUI3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChatDemoUI3.0" />
+              <option name="myItemId" value="cn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="ucai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="superwechat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3388,7 +3394,13 @@
       <option name="project" value="LOCAL" />
       <updated>1478428858554</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="修改用户昵称">
+      <created>1478435336579</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1478435336579</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3419,9 +3431,9 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24130106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24130106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28668684" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28668684" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3493,21 +3505,14 @@
     <MESSAGE value="少提交了的" />
     <MESSAGE value="修改个人资料界面布局" />
     <MESSAGE value="个人资料页面头像昵称微信号的显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="个人资料页面头像昵称微信号的显示" />
+    <MESSAGE value="修改用户昵称" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改用户昵称" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ConversationListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3753,16 +3758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/data/NetDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/jars/classes.jar!/com/hyphenate/easeui/ui/EaseConversationListFragment.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30623817">
@@ -3821,8 +3816,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1485#1523#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1485#1523#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3904,48 +3899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-          <folding>
-            <element signature="e#6370#6400#0" expanded="true" />
-            <element signature="e#6441#6478#0" expanded="true" />
-            <element signature="e#6480#6519#0" expanded="true" />
-            <element signature="e#6538#7501#0" expanded="true" />
-            <element signature="e#6848#6884#0" expanded="true" />
-            <element signature="e#7500#7501#0" expanded="true" />
-            <element signature="e#7647#7681#0" expanded="true" />
-            <element signature="e#7683#7713#0" expanded="true" />
-            <element signature="e#7735#9030#0" expanded="true" />
-            <element signature="e#8114#8445#0" expanded="true" />
-            <element signature="e#8244#8285#0" expanded="true" />
-            <element signature="e#8444#8445#0" expanded="true" />
-            <element signature="e#8556#8986#0" expanded="true" />
-            <element signature="e#8766#8810#0" expanded="true" />
-            <element signature="e#8985#8986#0" expanded="true" />
-            <element signature="e#9029#9030#0" expanded="true" />
-            <element signature="e#9713#9754#0" expanded="true" />
-            <element signature="e#9966#10007#0" expanded="true" />
-            <element signature="e#10308#10349#0" expanded="true" />
-            <element signature="method#uploadUserAvatar#0;class#UserProfileActivity#0" expanded="false" />
-            <element signature="e#12361#12396#0" expanded="true" />
-            <element signature="e#12398#12428#0" expanded="true" />
-            <element signature="e#12920#12965#0" expanded="true" />
-            <element signature="e#13133#13175#0" expanded="true" />
-            <element signature="method#Bitmap2Bytes#0;class#UserProfileActivity#0" expanded="false" />
-            <element signature="e#14166#14191#0" expanded="true" />
-            <element signature="e#14297#14311#0" expanded="true" />
-            <element signature="e#14313#15239#0" expanded="true" />
-            <element signature="e#14713#14754#0" expanded="true" />
-            <element signature="e#15001#15041#0" expanded="true" />
-            <element signature="e#15238#15239#0" expanded="true" />
-            <element signature="e#15259#15277#0" expanded="true" />
-            <element signature="e#15402#15448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="12.263914">
@@ -3975,9 +3928,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36983842">
-          <caret line="371" column="13" selection-start-line="371" selection-start-column="13" selection-end-line="371" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="376" column="0" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/jars/classes.jar!/com/hyphenate/easeui/domain/User.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7466919">
+          <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/data/NetDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27289048">
+          <caret line="325" column="41" selection-start-line="325" selection-start-column="41" selection-end-line="325" selection-end-column="41" />
+          <folding>
+            <element signature="e#6569#6599#0" expanded="true" />
+            <element signature="e#6640#6677#0" expanded="true" />
+            <element signature="e#6679#6718#0" expanded="true" />
+            <element signature="e#6737#7700#0" expanded="true" />
+            <element signature="e#7047#7083#0" expanded="true" />
+            <element signature="e#7699#7700#0" expanded="true" />
+            <element signature="e#7846#7880#0" expanded="true" />
+            <element signature="e#7882#7912#0" expanded="true" />
+            <element signature="e#7934#9229#0" expanded="true" />
+            <element signature="e#8313#8644#0" expanded="true" />
+            <element signature="e#8443#8484#0" expanded="true" />
+            <element signature="e#8643#8644#0" expanded="true" />
+            <element signature="e#8755#9185#0" expanded="true" />
+            <element signature="e#8965#9009#0" expanded="true" />
+            <element signature="e#9184#9185#0" expanded="true" />
+            <element signature="e#9228#9229#0" expanded="true" />
+            <element signature="e#9912#9953#0" expanded="true" />
+            <element signature="e#10165#10206#0" expanded="true" />
+            <element signature="e#10507#10548#0" expanded="true" />
+            <element signature="e#11635#11670#0" expanded="true" />
+            <element signature="e#11672#11702#0" expanded="true" />
+            <element signature="e#12605#12647#0" expanded="true" />
+            <element signature="e#12872#12914#0" expanded="true" />
+            <element signature="e#14001#14884#0" expanded="true" />
+            <element signature="e#14223#14857#0" expanded="true" />
+            <element signature="e#14470#14515#0" expanded="true" />
+            <element signature="e#14683#14725#0" expanded="true" />
+            <element signature="e#14856#14857#0" expanded="true" />
+            <element signature="e#14883#14884#0" expanded="true" />
+            <element signature="e#15936#15961#0" expanded="true" />
+            <element signature="e#16067#16081#0" expanded="true" />
+            <element signature="e#16083#17009#0" expanded="true" />
+            <element signature="e#16483#16524#0" expanded="true" />
+            <element signature="e#16771#16811#0" expanded="true" />
+            <element signature="e#17008#17009#0" expanded="true" />
+            <element signature="e#17029#17047#0" expanded="true" />
+            <element signature="e#17172#17218#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
