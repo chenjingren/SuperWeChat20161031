@@ -59,6 +59,7 @@ public class UserProfileFragment extends Fragment {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.layout_profile_view:
+                MFGT.gotoUserProfile(getActivity());
                 break;
             //red packer code :进入零钱页面
             case R.id.tv_profile_money:

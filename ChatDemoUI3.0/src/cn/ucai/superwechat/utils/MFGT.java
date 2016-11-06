@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentActivity;
 import cn.ucai.superwechat.R;
 import cn.ucai.superwechat.ui.MainActivity;
 import cn.ucai.superwechat.ui.SettingsActivity;
+import cn.ucai.superwechat.ui.UserProfileActivity;
 
 
 public class MFGT {
@@ -39,5 +40,9 @@ public class MFGT {
 
     public static void gotoSettings(Activity activity) {
         startActivity(activity, SettingsActivity.class);
+    }
+
+    public static void gotoUserProfile(Activity activity) {
+        startActivity(activity, UserProfileActivity.class);
     }
 }
