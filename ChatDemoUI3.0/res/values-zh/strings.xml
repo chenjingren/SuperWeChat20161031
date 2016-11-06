@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_name_cannot_be_modify">微信号不能被修改</string>
+    <string name="nick_name_not_modify">昵称未修改</string>
+</resources>
