@@ -27,7 +27,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.easemob.redpacketui.utils.RedPacketUtil;
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
@@ -139,7 +138,7 @@ public class SettingsActivity extends BaseActivity implements OnClickListener {
 		switch_delete_msg_when_exit_group = (EaseSwitchButton) findViewById(R.id.switch_delete_msg_when_exit_group);
 		switch_auto_accept_group_invitation = (EaseSwitchButton) findViewById(R.id.switch_auto_accept_group_invitation);
 		switch_adaptive_video_encode = (EaseSwitchButton) findViewById(R.id.switch_adaptive_video_encode);
-		LinearLayout llChange = (LinearLayout) findViewById(R.id.ll_change);
+		//LinearLayout llChange = (LinearLayout) findViewById(R.id.ll_change);
 		logoutBtn = (Button) findViewById(R.id.btn_logout);
 		if(!TextUtils.isEmpty(EMClient.getInstance().getCurrentUser())){
 			logoutBtn.setText(getString(R.string.button_logout) + "(" + EMClient.getInstance().getCurrentUser() + ")");
@@ -172,7 +171,7 @@ public class SettingsActivity extends BaseActivity implements OnClickListener {
 		rl_switch_delete_msg_when_exit_group.setOnClickListener(this);
 		rl_switch_auto_accept_group_invitation.setOnClickListener(this);
 		rl_switch_adaptive_video_encode.setOnClickListener(this);
-		llChange.setOnClickListener(this);
+		//llChange.setOnClickListener(this);
 
 		// the vibrate and sound notification are allowed or not?
 		if (settingsModel.getSettingMsgNotification()) {
@@ -242,9 +241,9 @@ public class SettingsActivity extends BaseActivity implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 			//red packet code : 进入零钱页面
-			case R.id.ll_change:
+			/*case R.id.ll_change:
 				RedPacketUtil.startChangeActivity(this);
-				break;
+				break;*/
 			//end of red packet code
 			case R.id.rl_switch_notification:
 				if (notifiSwitch.isSwitchOpen()) {
