@@ -17,10 +17,8 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -109,13 +107,13 @@ public class AddContactActivity extends BaseActivity {
                     if (result!=null && result.isRetMsg()){
                         User u = (User) result.getRetData();
                         if (u!=null){
-
+                            MFGT.gotoUserDetail(AddContactActivity.this,u);
                         }
                     }else {
-
+                        CommonUtils.showLongToast(R.string.msg_104);
                     }
                 }else {
-
+                    CommonUtils.showLongToast(R.string.msg_104);
                 }
             }
 
@@ -123,6 +121,7 @@ public class AddContactActivity extends BaseActivity {
             public void onError(String error) {
                 L.e(TAG,"error===="+error);
                 progressDialog.dismiss();
+                CommonUtils.showLongToast(R.string.msg_104);
             }
         });
     }
@@ -146,7 +145,6 @@ public class AddContactActivity extends BaseActivity {
             new EaseAlertDialog(this, R.string.This_user_is_already_your_friend).show();
             return;
         }
-
 
 
         new Thread(new Runnable() {
