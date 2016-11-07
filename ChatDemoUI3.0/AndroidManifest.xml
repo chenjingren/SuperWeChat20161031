@@ -480,7 +480,8 @@
         <activity
             android:name=".ui.GuideActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/horizontal_slide" />
+        <activity android:name=".ui.UserDetailActivity"></activity>
     </application>
 
 </manifest>

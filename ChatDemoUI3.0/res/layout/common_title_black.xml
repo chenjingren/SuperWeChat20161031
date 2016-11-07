@@ -41,7 +41,26 @@
         android:gravity="center"
         />
     <TextView
-        android:id="@+id/tv_no"
+        android:id="@+id/tv_add_friend"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/add_friend"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_toRightOf="@id/iv_back"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+
 </RelativeLayout>
