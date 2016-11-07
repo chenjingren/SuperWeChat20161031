@@ -12,6 +12,7 @@ import com.hyphenate.easeui.controller.EaseUI.EaseUserProfileProvider;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.domain.User;
 
+
 public class EaseUserUtils {
     
     static EaseUserProfileProvider userProvider;
