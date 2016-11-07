@@ -128,4 +128,8 @@ public class EaseUserUtils {
     public static void setAppUserName(String suffix,String username, TextView textView) {
         textView.setText(suffix + username);
     }
+
+    public static void setAppUserNick(String userNick,TextView textView){
+        textView.setText(userNick);
+    }
 }
