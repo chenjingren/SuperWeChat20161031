@@ -15,6 +15,7 @@ package cn.ucai.superwechat.ui;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -31,6 +32,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -60,8 +62,11 @@ import cn.ucai.superwechat.SuperWeChatHelper;
 import cn.ucai.superwechat.adapter.MainTabAdapter;
 import cn.ucai.superwechat.db.InviteMessgeDao;
 import cn.ucai.superwechat.db.UserDao;
+import cn.ucai.superwechat.dialog.TitleMenu.ActionItem;
+import cn.ucai.superwechat.dialog.TitleMenu.TitlePopup;
 import cn.ucai.superwechat.runtimepermissions.PermissionsManager;
 import cn.ucai.superwechat.runtimepermissions.PermissionsResultAction;
+import cn.ucai.superwechat.utils.MFGT;
 import cn.ucai.superwechat.widget.DMTabHost;
 import cn.ucai.superwechat.widget.MFViewPager;
 
@@ -94,6 +99,12 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
 
 
     MainTabAdapter mainTabAdapter;
+
+    TitlePopup titlePopup;
+
+    Activity mContext;
+
+    TitlePopup.OnItemOnClickListener onItemOnClickListener;
     /**
      * check if current user account was remove
      */
@@ -107,6 +118,7 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
         setContentView(R.layout.em_activity_main);
         ButterKnife.bind(this);
 
+        mContext =this;
         savePower();
         checkLogined(savedInstanceState);
         // runtime permission for android 6.0, just require all permissions here for simple
@@ -218,6 +230,37 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
 
         tabHost.setOnCheckedChangeListener(this);
         layoutViewPage.setOnPageChangeListener(this);
+
+        titlePopup = new TitlePopup(this, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        titlePopup.addAction(new ActionItem(mContext,R.string.menu_groupchat,R.drawable.icon_menu_group));
+        titlePopup.addAction(new ActionItem(mContext,R.string.menu_addfriend,R.drawable.icon_menu_addfriend));
+        titlePopup.addAction(new ActionItem(mContext,R.string.menu_qrcode,R.drawable.icon_menu_sao));
+        titlePopup.addAction(new ActionItem(mContext,R.string.menu_money,R.drawable.icon_menu_money));
+        ivAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                titlePopup.show(findViewById(R.id.layout_title));
+            }
+        });
+        onItemOnClickListener = new TitlePopup.OnItemOnClickListener() {
+            @Override
+            public void onItemClick(ActionItem item, int position) {
+                switch (position){
+                    case 0:
+                        break;
+                    case 1:
+                        MFGT.gotoAddFriends(mContext);
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                }
+            }
+        };
+        titlePopup.setItemOnClickListener(onItemOnClickListener);
+
     }
 
     /**
