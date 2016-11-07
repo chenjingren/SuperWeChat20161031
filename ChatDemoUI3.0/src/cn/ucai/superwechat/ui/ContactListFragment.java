@@ -98,6 +98,9 @@ public class ContactListFragment extends EaseContactListFragment {
     @SuppressWarnings("unchecked")
     @Override
     protected void setUpView() {
+        this.hideTitleBar();
+        /*titleBar.setVisibility(View.GONE);
+        titleBar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         titleBar.setRightImageResource(R.drawable.em_add);
         titleBar.setRightLayoutClickListener(new OnClickListener() {
             
@@ -106,7 +109,8 @@ public class ContactListFragment extends EaseContactListFragment {
 //                startActivity(new Intent(getActivity(), AddContactActivity.class));
                 NetUtils.hasDataConnection(getActivity());
             }
-        });
+        });*/
+
         //设置联系人数据
         Map<String, EaseUser> m = SuperWeChatHelper.getInstance().getContactList();
         if (m instanceof Hashtable<?, ?>) {
@@ -129,13 +133,13 @@ public class ContactListFragment extends EaseContactListFragment {
 
         
         // 进入添加好友页
-        titleBar.getRightLayout().setOnClickListener(new OnClickListener() {
+       /* titleBar.getRightLayout().setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), AddContactActivity.class));
             }
-        });
+        });*/
         
         
         contactSyncListener = new ContactSyncListener();

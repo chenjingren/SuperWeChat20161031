@@ -17,6 +17,7 @@ public class SetServersActivity extends BaseActivity {
 
     SuperWeChatModel demoModel;
 
+    //ContactListFragment contactListFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +38,10 @@ public class SetServersActivity extends BaseActivity {
                 onBackPressed();
             }
         });
-
+        titleBar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        //titleBar.setVisibility(View.GONE);
+        /*contactListFragment = new ContactListFragment();
+        contactListFragment.hideTitleBar();*/
     }
 
     @Override
