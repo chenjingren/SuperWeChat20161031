@@ -25,6 +25,7 @@ import cn.ucai.superwechat.data.NetDao;
 import cn.ucai.superwechat.db.InviteMessgeDao;
 import cn.ucai.superwechat.db.OkHttpUtils;
 import cn.ucai.superwechat.domain.InviteMessage;
+import cn.ucai.superwechat.utils.L;
 import cn.ucai.superwechat.utils.ResultUtils;
 
 import android.app.Activity;
@@ -43,6 +44,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class NewFriendsMsgAdapter extends ArrayAdapter<InviteMessage> {
+
+    public static final String TAG = NewFriendsMsgAdapter.class.getName();
 
 	private Context context;
 	private InviteMessgeDao messgeDao;
@@ -106,17 +109,13 @@ public class NewFriendsMsgAdapter extends ArrayAdapter<InviteMessage> {
                 public void onSuccess(String s) {
                     if (s!=null){
                         Result result = ResultUtils.getResultFromJson(s, User.class);
-                        if(result!=null && result.isRetMsg()){
+                        if(result!=null && result.isRetMsg()) {
                             User user = (User) result.getRetData();
-                            if (user != null){
-                                EaseUserUtils.setAppUserPathAvatar(context,user.getAvatar(),holder.avator);
-                                EaseUserUtils.setAppUserNick(user.getMUserNick(),holder.name);
+                            if (user != null) {
+                                EaseUserUtils.setAppUserPathAvatar(context, user.getAvatar(), holder.avator);
+                                EaseUserUtils.setAppUserNick(user.getMUserNick(), holder.name);
                             }
-                        }else {
-
                         }
-                    }else {
-
                     }
                 }
 
@@ -208,8 +207,8 @@ public class NewFriendsMsgAdapter extends ArrayAdapter<InviteMessage> {
 		pd.setMessage(str1);
 		pd.setCanceledOnTouchOutside(false);
 		pd.show();
-
-		new Thread(new Runnable() {
+        L.e(TAG,"acceptInvitation");
+        new Thread(new Runnable() {
 			public void run() {
 				// call api
 				try {
@@ -235,6 +234,7 @@ public class NewFriendsMsgAdapter extends ArrayAdapter<InviteMessage> {
 							buttonAgree.setEnabled(false);
 							
 							buttonRefuse.setVisibility(View.INVISIBLE);
+                            L.e(TAG,"acceptInvitation...............");
 						}
 					});
 				} catch (final Exception e) {

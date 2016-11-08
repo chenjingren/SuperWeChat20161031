@@ -64,6 +64,9 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 public class SuperWeChatHelper {
+
+    //public static final String TAG = SuperWeChatHelper.class.getName();
+
     /**
      * data sync listener
      */
@@ -128,6 +131,7 @@ public class SuperWeChatHelper {
 
     private InviteMessgeDao inviteMessgeDao;
     private UserDao userDao;
+
 
     private LocalBroadcastManager broadcastManager;
 
@@ -626,6 +630,7 @@ public class SuperWeChatHelper {
 
         @Override
         public void onContactAdded(String username) {
+            L.e(TAG,"MyContactListener,onContactAdded");
             // save contact
             Map<String, EaseUser> localUsers = getContactList();
             Map<String, EaseUser> toAddUsers = new HashMap<String, EaseUser>();
@@ -642,6 +647,7 @@ public class SuperWeChatHelper {
 
         @Override
         public void onContactDeleted(String username) {
+            L.e(TAG,"MyContactListener,onContactDeleted");
             Map<String, EaseUser> localUsers = SuperWeChatHelper.getInstance().getContactList();
             localUsers.remove(username);
             userDao.deleteContact(username);
@@ -652,6 +658,7 @@ public class SuperWeChatHelper {
 
         @Override
         public void onContactInvited(String username, String reason) {
+            L.e(TAG,"MyContactListener,onContactInvited");
             List<InviteMessage> msgs = inviteMessgeDao.getMessagesList();
 
             for (InviteMessage inviteMessage : msgs) {
@@ -673,6 +680,7 @@ public class SuperWeChatHelper {
 
         @Override
         public void onContactAgreed(String username) {
+            L.e(TAG,"MyContactListener,onContactAgreed");
             List<InviteMessage> msgs = inviteMessgeDao.getMessagesList();
             for (InviteMessage inviteMessage : msgs) {
                 if (inviteMessage.getFrom().equals(username)) {
@@ -691,6 +699,7 @@ public class SuperWeChatHelper {
 
         @Override
         public void onContactRefused(String username) {
+            L.e(TAG,"MyContactListener,onContactRefused");
             // your request was refused
             Log.d(username, username + " refused to your request");
         }
