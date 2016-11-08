@@ -53,7 +53,7 @@ public class UserDetailActivity extends BaseActivity {
         tvTitle.setText(R.string.userinfo_txt_profile);
 
         EaseUserUtils.setAppUserAvatar(this, user.getMUserName(), profileImage);
-        EaseUserUtils.setAppUserNick(user.getMUserNick(), tvUserinfoNick);
+        EaseUserUtils.setAppUserNick(user.getMUserName(), tvUserinfoNick);
         EaseUserUtils.setAppUserName("", user.getMUserName(), tvUserinfoName);
 
         isFriend();

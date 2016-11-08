@@ -129,7 +129,7 @@ public class EaseUserUtils {
         textView.setText(suffix + username);
     }
 
-    public static void setAppUserNick(String userNick,TextView textView){
+    /*public static void setAppUserNick(String userNick,TextView textView){
         textView.setText(userNick);
-    }
+    }*/
 }
