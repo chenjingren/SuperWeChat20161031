@@ -481,7 +481,8 @@
             android:name=".ui.GuideActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" />
-        <activity android:name=".ui.UserDetailActivity"></activity>
+        <activity android:name=".ui.UserDetailActivity" />
+        <activity android:name=".ui.ApplyAddFriendActivity"></activity>
     </application>
 
 </manifest>

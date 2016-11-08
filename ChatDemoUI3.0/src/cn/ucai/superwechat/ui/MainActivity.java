@@ -105,6 +105,10 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
     Activity mContext;
 
     TitlePopup.OnItemOnClickListener onItemOnClickListener;
+
+    private ContactListFragment contactListFragment;
+
+    private int currentTabIndex;
     /**
      * check if current user account was remove
      */
@@ -120,9 +124,10 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
 
         mContext =this;
         savePower();
-        checkLogined(savedInstanceState);
+        checkIsLogin(savedInstanceState);
         // runtime permission for android 6.0, just require all permissions here for simple
         requestPermissions();
+        contactListFragment = new ContactListFragment();
         initView();
         umeng();
         checkAccount();
@@ -161,7 +166,7 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
         UmengUpdateAgent.update(this);
     }
 
-    private void checkLogined(Bundle savedInstanceState) {
+    private void checkIsLogin(Bundle savedInstanceState) {
         //make sure activity will not in background if user is logged into another device or removed
         if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
             SuperWeChatHelper.getInstance().logout(false, null);
@@ -222,7 +227,7 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
         layoutViewPage.setOffscreenPageLimit(4);
         mainTabAdapter.clear();
         mainTabAdapter.addFragment(new ConversationListFragment(),getString(R.string.app_name));
-        mainTabAdapter.addFragment(new ContactListFragment(),getString(R.string.contacts));
+        mainTabAdapter.addFragment(contactListFragment,getString(R.string.contacts));
         mainTabAdapter.addFragment(new DiscoverFragment(),getString(R.string.discover));
         mainTabAdapter.addFragment(new UserProfileFragment(),getString(R.string.me));
         mainTabAdapter.notifyDataSetChanged();
@@ -369,11 +374,12 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
                     if (conversationListFragment != null) {
                         conversationListFragment.refresh();
                     }
-                } else if (currentTabIndex == 1) {
+                } else */
+                if (currentTabIndex == 1) {
                     if(contactListFragment != null) {
                         contactListFragment.refresh();
                     }
-                }*/
+                }
                 String action = intent.getAction();
                 if (action.equals(Constant.ACTION_GROUP_CHANAGED)) {
                     if (EaseCommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
@@ -395,6 +401,7 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
     @Override
     public void onCheckedChange(int checkedPosition, boolean byUser) {
         layoutViewPage.setCurrentItem(checkedPosition);
+        currentTabIndex = checkedPosition;
     }
 
     @Override
@@ -406,6 +413,7 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
     public void onPageSelected(int position) {
         tabHost.setChecked(position);
         layoutViewPage.setCurrentItem(position);
+        currentTabIndex = position;
     }
 
     @Override
@@ -464,7 +472,6 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
             unregisterReceiver(internalDebugReceiver);
         } catch (Exception e) {
         }
-
     }
 
     /**
@@ -487,11 +494,13 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
         runOnUiThread(new Runnable() {
             public void run() {
                 int count = getUnreadAddressCountTotal();
-				/*if (count > 0) {
-					unreadAddressLable.setVisibility(View.VISIBLE);
+				if (count > 0) {
+                    tabHost.setHasNew(currentTabIndex,true);
+					//unreadAddressLable.setVisibility(View.VISIBLE);
 				} else {
-					unreadAddressLable.setVisibility(View.INVISIBLE);
-				}*/
+                    tabHost.setHasNew(currentTabIndex,false);
+					//unreadAddressLable.setVisibility(View.INVISIBLE);
+				}
             }
         });
 
