@@ -76,6 +76,9 @@ public class EaseUserUtils {
     public static void setAppUserNick(String username,TextView textView){
         if(textView != null){
             User user = getAppUserInfo(username);
+            if (user == null){
+                user = new User(username);
+            }
             if(user != null && user.getMUserNick() != null){
                 textView.setText(user.getMUserNick());
             }else{
@@ -86,6 +89,9 @@ public class EaseUserUtils {
 
     public static void setAppUserAvatar(Context context, String username, ImageView imageView){
         User user = getAppUserInfo(username);
+        if (user == null){
+            user = new User(username);
+        }
         if(user != null && user.getAvatar() != null){
             try {
                 int avatarResId = Integer.parseInt(user.getAvatar());
