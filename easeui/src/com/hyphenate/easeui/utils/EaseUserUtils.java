@@ -12,6 +12,8 @@ import com.hyphenate.easeui.controller.EaseUI.EaseUserProfileProvider;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.domain.User;
 
+import sun.rmi.runtime.Log;
+
 
 public class EaseUserUtils {
     
@@ -76,9 +78,9 @@ public class EaseUserUtils {
     public static void setAppUserNick(String username,TextView textView){
         if(textView != null){
             User user = getAppUserInfo(username);
-            if (user == null){
+            /*if (user == null){
                 user = new User(username);
-            }
+            }*/
             if(user != null && user.getMUserNick() != null){
                 textView.setText(user.getMUserNick());
             }else{
@@ -93,6 +95,7 @@ public class EaseUserUtils {
             user = new User(username);
         }
         if(user != null && user.getAvatar() != null){
+            Log.e("user.getAvatar==="+user.getAvatar());
             try {
                 int avatarResId = Integer.parseInt(user.getAvatar());
                 Glide.with(context).load(avatarResId).into(imageView);
@@ -103,6 +106,17 @@ public class EaseUserUtils {
         }else{
             Glide.with(context).load(R.drawable.ease_default_avatar).into(imageView);
         }
+    }
+
+    public static void setAppUserPathAvatar(Context context, String path, ImageView imageView){
+            try {
+                int avatarResId = Integer.parseInt(path);
+                Glide.with(context).load(avatarResId).into(imageView);
+            } catch (Exception e) {
+                //use default avatar
+                Glide.with(context).load(path).diskCacheStrategy(DiskCacheStrategy.ALL).placeholder(R.drawable.ease_default_avatar).into(imageView);
+            }
+            Glide.with(context).load(R.drawable.ease_default_avatar).into(imageView);
     }
 
     public static User getAppUserInfo(String username){
