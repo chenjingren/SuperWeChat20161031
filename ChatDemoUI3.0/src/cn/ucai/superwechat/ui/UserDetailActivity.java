@@ -1,5 +1,6 @@
 package cn.ucai.superwechat.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,9 +16,12 @@ import butterknife.OnClick;
 import cn.ucai.superwechat.I;
 import cn.ucai.superwechat.R;
 import cn.ucai.superwechat.SuperWeChatHelper;
+import cn.ucai.superwechat.utils.L;
 import cn.ucai.superwechat.utils.MFGT;
 
 public class UserDetailActivity extends BaseActivity {
+
+    public static final String TAG = UserDetailActivity.class.getName();
 
     @BindView(R.id.iv_back)
     ImageView ivBack;
@@ -44,6 +48,7 @@ public class UserDetailActivity extends BaseActivity {
         setContentView(R.layout.activity_user_detail);
         ButterKnife.bind(this);
         user = (User) getIntent().getSerializableExtra(I.User.USER_NAME);
+        L.e(TAG,"UserDetailActivity.user====="+user);
         if (user == null) {
             MFGT.finish(this);
         }
@@ -51,8 +56,7 @@ public class UserDetailActivity extends BaseActivity {
         ivBack.setVisibility(View.VISIBLE);
         tvTitle.setVisibility(View.VISIBLE);
         tvTitle.setText(R.string.userinfo_txt_profile);
-
-        EaseUserUtils.setAppUserAvatar(this, user.getMUserName(), profileImage);
+        EaseUserUtils.setAppUserAvatar(this,user.getMUserName(),profileImage);
         EaseUserUtils.setAppUserNick(user.getMUserName(), tvUserinfoNick);
         EaseUserUtils.setAppUserName("", user.getMUserName(), tvUserinfoName);
 
@@ -78,6 +82,8 @@ public class UserDetailActivity extends BaseActivity {
                 MFGT.gotoApplyAddContact(this,user.getMUserName());
                 break;
             case R.id.btn_send_msg:
+                MFGT.gotoChat(this,user.getMUserName());
+                //startActivity(new Intent(getActivity(), ChatActivity.class).putExtra("userId", username));
                 break;
             case R.id.btn_send_video:
                 break;
