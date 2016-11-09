@@ -67,6 +67,7 @@ import cn.ucai.superwechat.dialog.TitleMenu.ActionItem;
 import cn.ucai.superwechat.dialog.TitleMenu.TitlePopup;
 import cn.ucai.superwechat.runtimepermissions.PermissionsManager;
 import cn.ucai.superwechat.runtimepermissions.PermissionsResultAction;
+import cn.ucai.superwechat.utils.L;
 import cn.ucai.superwechat.utils.MFGT;
 import cn.ucai.superwechat.widget.DMTabHost;
 import cn.ucai.superwechat.widget.MFViewPager;
@@ -352,12 +353,12 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
             public void run() {
                 // refresh unread count
                 updateUnreadLabel();
-				if (currentTabIndex == 0) {
+				//if (currentTabIndex == 0) {
 					// refresh conversation list
 					if (conversationListFragment != null) {
 						conversationListFragment.refresh();
 					}
-				}
+				//}
             }
         });
     }
@@ -379,16 +380,16 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
             public void onReceive(Context context, Intent intent) {
                 updateUnreadLabel();
                 updateUnreadAddressLable();
-                if (currentTabIndex == 0) {
+                //if (currentTabIndex == 0) {
                     // refresh conversation list
                     if (conversationListFragment != null) {
                         conversationListFragment.refresh();
                     }
-                } else if (currentTabIndex == 1) {
+                //} else if (currentTabIndex == 1) {
                     if(contactListFragment != null) {
                         contactListFragment.refresh();
                     }
-                }
+                //}
                 String action = intent.getAction();
                 if (action.equals(Constant.ACTION_GROUP_CHANAGED)) {
                     if (EaseCommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
@@ -488,7 +489,9 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
      */
     public void updateUnreadLabel() {
         int count = getUnreadMsgCountTotal();
-		/*if (count > 0) {
+        L.e(TAG,"updateUnreadLabel.count====="+count);
+        tabHost.setUnreadCount(0,count);
+        /*if (count > 0) {
 			unreadLabel.setText(String.valueOf(count));
 			unreadLabel.setVisibility(View.VISIBLE);
 		} else {

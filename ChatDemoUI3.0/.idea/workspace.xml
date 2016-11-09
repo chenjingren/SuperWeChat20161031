@@ -64,12 +64,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c93c2e2-6593-4b25-af37-c3d2ab0561c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/I.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/I.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ChatActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ChatActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../easeui/src/com/hyphenate/easeui/utils/EaseUserUtils.java" afterPath="$PROJECT_DIR$/../easeui/src/com/hyphenate/easeui/utils/EaseUserUtils.java" />
     </list>
     <ignored path="ChatDemoUI3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -150,25 +146,27 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18671454">
-              <caret line="655" column="47" selection-start-line="655" selection-start-column="47" selection-end-line="655" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.23518851">
+              <caret line="487" column="34" selection-start-line="487" selection-start-column="34" selection-end-line="487" selection-end-column="34" />
               <folding>
-                <element signature="e#4464#4465#0" expanded="true" />
-                <element signature="e#4510#4511#0" expanded="true" />
-                <element signature="e#10461#10960#0" expanded="true" />
-                <element signature="e#10959#10960#0" expanded="true" />
-                <element signature="e#13131#13446#0" expanded="true" />
-                <element signature="e#13445#13446#0" expanded="true" />
-                <element signature="e#13502#13503#0" expanded="true" />
-                <element signature="e#13534#13535#0" expanded="true" />
-                <element signature="e#18056#18461#0" expanded="true" />
-                <element signature="e#18460#18461#0" expanded="true" />
-                <element signature="e#22558#22616#0" expanded="true" />
-                <element signature="e#22966#22989#0" expanded="true" />
-                <element signature="e#23048#23059#0" expanded="true" />
-                <element signature="e#23061#23469#0" expanded="true" />
-                <element signature="e#23468#23469#0" expanded="true" />
-                <marker date="1478666537788" expanded="true" signature="17875:17926" placeholder="{...}" />
+                <element signature="e#4500#4501#0" expanded="true" />
+                <element signature="e#4546#4547#0" expanded="true" />
+                <element signature="e#10497#10996#0" expanded="true" />
+                <element signature="e#10995#10996#0" expanded="true" />
+                <element signature="e#13167#13486#0" expanded="true" />
+                <element signature="e#13485#13486#0" expanded="true" />
+                <element signature="e#13542#13543#0" expanded="true" />
+                <element signature="e#13574#13575#0" expanded="true" />
+                <element signature="e#13989#15324#0" expanded="true" />
+                <element signature="e#15323#15324#0" expanded="true" />
+                <element signature="e#18204#18609#0" expanded="true" />
+                <element signature="e#18608#18609#0" expanded="true" />
+                <element signature="e#22706#22764#0" expanded="true" />
+                <element signature="e#23114#23137#0" expanded="true" />
+                <element signature="e#23196#23207#0" expanded="true" />
+                <element signature="e#23209#23617#0" expanded="true" />
+                <element signature="e#23616#23617#0" expanded="true" />
+                <marker date="1478675799672" expanded="true" signature="18023:18074" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -2768,8 +2766,8 @@
         <option value="$PROJECT_DIR$/../easeui/src/com/hyphenate/easeui/utils/EaseUserUtils.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ChatActivity.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/I.java" />
-        <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatHelper.java" />
+        <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -3445,7 +3443,13 @@
       <option name="project" value="LOCAL" />
       <updated>1478660711031</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="跳入好友详情，发消息，然后back，直接回到ConversationFragment里">
+      <created>1478675497568</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1478675497568</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3478,7 +3482,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08472012" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23524962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -4025,25 +4029,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18671454">
-          <caret line="655" column="47" selection-start-line="655" selection-start-column="47" selection-end-line="655" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.23518851">
+          <caret line="487" column="34" selection-start-line="487" selection-start-column="34" selection-end-line="487" selection-end-column="34" />
           <folding>
-            <element signature="e#4464#4465#0" expanded="true" />
-            <element signature="e#4510#4511#0" expanded="true" />
-            <element signature="e#10461#10960#0" expanded="true" />
-            <element signature="e#10959#10960#0" expanded="true" />
-            <element signature="e#13131#13446#0" expanded="true" />
-            <element signature="e#13445#13446#0" expanded="true" />
-            <element signature="e#13502#13503#0" expanded="true" />
-            <element signature="e#13534#13535#0" expanded="true" />
-            <element signature="e#18056#18461#0" expanded="true" />
-            <element signature="e#18460#18461#0" expanded="true" />
-            <element signature="e#22558#22616#0" expanded="true" />
-            <element signature="e#22966#22989#0" expanded="true" />
-            <element signature="e#23048#23059#0" expanded="true" />
-            <element signature="e#23061#23469#0" expanded="true" />
-            <element signature="e#23468#23469#0" expanded="true" />
-            <marker date="1478666537788" expanded="true" signature="17875:17926" placeholder="{...}" />
+            <element signature="e#4500#4501#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#10497#10996#0" expanded="true" />
+            <element signature="e#10995#10996#0" expanded="true" />
+            <element signature="e#13167#13486#0" expanded="true" />
+            <element signature="e#13485#13486#0" expanded="true" />
+            <element signature="e#13542#13543#0" expanded="true" />
+            <element signature="e#13574#13575#0" expanded="true" />
+            <element signature="e#13989#15324#0" expanded="true" />
+            <element signature="e#15323#15324#0" expanded="true" />
+            <element signature="e#18204#18609#0" expanded="true" />
+            <element signature="e#18608#18609#0" expanded="true" />
+            <element signature="e#22706#22764#0" expanded="true" />
+            <element signature="e#23114#23137#0" expanded="true" />
+            <element signature="e#23196#23207#0" expanded="true" />
+            <element signature="e#23209#23617#0" expanded="true" />
+            <element signature="e#23616#23617#0" expanded="true" />
+            <marker date="1478675799672" expanded="true" signature="18023:18074" placeholder="{...}" />
           </folding>
         </state>
       </provider>
