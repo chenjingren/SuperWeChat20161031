@@ -673,14 +673,31 @@ public class SuperWeChatHelper {
         }
 
         @Override
-        public void onContactDeleted(String username) {
+        public void onContactDeleted(final String username) {
             L.e(TAG,"MyContactListener,onContactDeleted");
             Map<String, EaseUser> localUsers = SuperWeChatHelper.getInstance().getContactList();
             localUsers.remove(username);
             userDao.deleteContact(username);
             inviteMessgeDao.deleteMessage(username);
 
-            broadcastManager.sendBroadcast(new Intent(Constant.ACTION_CONTACT_CHANAGED));
+            NetDao.reqDelContact(appContext, EMClient.getInstance().getCurrentUser(), username, new OkHttpUtils.OnCompleteListener<String>() {
+                @Override
+                public void onSuccess(String s) {
+                    if (s!=null){
+                        Result result = ResultUtils.getResultFromJson(s, null);
+                        if (result!=null && result.isRetMsg()){
+                            //userDao.deleteContact(username);
+                        }
+                    }
+                }
+
+                @Override
+                public void onError(String error) {
+
+                }
+                });
+
+                    broadcastManager.sendBroadcast(new Intent(Constant.ACTION_CONTACT_CHANAGED));
         }
 
         @Override

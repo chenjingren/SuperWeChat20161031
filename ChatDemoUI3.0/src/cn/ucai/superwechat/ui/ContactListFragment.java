@@ -22,6 +22,7 @@ import cn.ucai.superwechat.SuperWeChatHelper.DataSyncListener;
 import cn.ucai.superwechat.R;
 import cn.ucai.superwechat.db.InviteMessgeDao;
 import cn.ucai.superwechat.db.UserDao;
+import cn.ucai.superwechat.utils.L;
 import cn.ucai.superwechat.utils.MFGT;
 import cn.ucai.superwechat.widget.ContactItemView;
 import com.hyphenate.easeui.domain.EaseUser;
@@ -220,6 +221,7 @@ public class ContactListFragment extends EaseContactListFragment {
 
 	@Override
 	public boolean onContextItemSelected(MenuItem item) {
+        L.e(TAG,"ContactListFragment.onContextItemSelected");
 		if (item.getItemId() == R.id.delete_contact) {
 			try {
                 // delete contact
@@ -231,10 +233,10 @@ public class ContactListFragment extends EaseContactListFragment {
                 e.printStackTrace();
             }
 			return true;
-		}else if(item.getItemId() == R.id.add_to_blacklist){
+		}/*else if(item.getItemId() == R.id.add_to_blacklist){
 			moveToBlacklist(toBeProcessUsername);
 			return true;
-		}
+		}*/
 		return super.onContextItemSelected(item);
 	}
 
@@ -274,9 +276,7 @@ public class ContactListFragment extends EaseContactListFragment {
 							Toast.makeText(getActivity(), st2 + e.getMessage(), Toast.LENGTH_LONG).show();
 						}
 					});
-
 				}
-
 			}
 		}).start();
 
