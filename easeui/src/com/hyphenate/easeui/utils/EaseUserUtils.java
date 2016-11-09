@@ -12,7 +12,6 @@ import com.hyphenate.easeui.controller.EaseUI.EaseUserProfileProvider;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.domain.User;
 
-import sun.rmi.runtime.Log;
 
 
 public class EaseUserUtils {
@@ -95,7 +94,6 @@ public class EaseUserUtils {
             user = new User(username);
         }
         if(user != null && user.getAvatar() != null){
-            Log.e("user.getAvatar==="+user.getAvatar());
             try {
                 int avatarResId = Integer.parseInt(user.getAvatar());
                 Glide.with(context).load(avatarResId).into(imageView);

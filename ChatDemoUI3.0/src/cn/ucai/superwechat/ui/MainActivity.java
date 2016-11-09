@@ -57,6 +57,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.ucai.superwechat.Constant;
+import cn.ucai.superwechat.I;
 import cn.ucai.superwechat.R;
 import cn.ucai.superwechat.SuperWeChatHelper;
 import cn.ucai.superwechat.adapter.MainTabAdapter;
@@ -511,7 +512,6 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
 				}
             }
         });
-
     }
 
     /**
@@ -546,7 +546,6 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
     @Override
     protected void onResume() {
         super.onResume();
-
         if (!isConflict && !isCurrentAccountRemoved) {
             updateUnreadLabel();
             updateUnreadAddressLable();
@@ -585,8 +584,6 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
         return super.onKeyDown(keyCode, event);
     }
 
-
-
     /**
      * show the dialog when user logged into another device
      */
@@ -619,9 +616,7 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
             } catch (Exception e) {
                 EMLog.e(TAG, "---------color conflictBuilder error" + e.getMessage());
             }
-
         }
-
     }
 
     /**
@@ -654,9 +649,7 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
             } catch (Exception e) {
                 EMLog.e(TAG, "---------color userRemovedBuilder error" + e.getMessage());
             }
-
         }
-
     }
 
     @Override
@@ -666,6 +659,11 @@ public class MainActivity extends BaseActivity implements DMTabHost.OnCheckedCha
             showConflictDialog();
         } else if (intent.getBooleanExtra(Constant.ACCOUNT_REMOVED, false) && !isAccountRemovedDialogShow) {
             showAccountRemovedDialog();
+        }
+        boolean isBack = intent.getBooleanExtra(I.ACTION_TO_CONVERSATION,false);
+        if (isBack){
+            tabHost.setChecked(0);
+            //layoutViewPage.setCurrentItem(0);
         }
     }
 
