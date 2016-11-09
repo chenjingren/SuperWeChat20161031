@@ -680,7 +680,8 @@ public class SuperWeChatHelper {
             userDao.deleteContact(username);
             inviteMessgeDao.deleteMessage(username);
 
-                    broadcastManager.sendBroadcast(new Intent(Constant.ACTION_CONTACT_CHANAGED));
+            SuperWeChatHelper.getInstance().delAppContact(username);
+            broadcastManager.sendBroadcast(new Intent(Constant.ACTION_CONTACT_CHANAGED));
         }
 
         @Override

@@ -66,9 +66,6 @@
     <list default="true" id="8c93c2e2-6593-4b25-af37-c3d2ab0561c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatHelper.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatModel.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/UserDao.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/UserDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ContactListFragment.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ContactListFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" />
     </list>
@@ -137,61 +134,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/data/NetDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SuperWeChatHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23518851">
-              <caret line="760" column="25" selection-start-line="760" selection-start-column="25" selection-end-line="760" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.18671454">
+              <caret line="675" column="61" selection-start-line="675" selection-start-column="61" selection-end-line="675" selection-end-column="61" />
               <folding>
                 <element signature="e#11660#11707#0" expanded="true" />
                 <element signature="e#11945#11992#0" expanded="true" />
                 <element signature="e#22594#22662#0" expanded="true" />
                 <element signature="e#23753#23815#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SuperWeChatDBManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="104" column="63" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/db/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SuperWeChatModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="275" column="47" selection-start-line="275" selection-start-column="47" selection-end-line="275" selection-end-column="47" />
-              <folding>
-                <element signature="e#7478#7479#0" expanded="true" />
-                <element signature="e#7549#7550#0" expanded="true" />
-                <element signature="e#7699#7700#0" expanded="true" />
-                <element signature="e#7767#7768#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -206,19 +158,6 @@
                 <element signature="e#10431#10930#0" expanded="true" />
                 <element signature="e#10929#10930#0" expanded="true" />
                 <marker date="1478660527677" expanded="true" signature="17845:17896" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InviteMessgeDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/db/InviteMessgeDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
-              <folding>
-                <element signature="e#2111#2112#0" expanded="true" />
-                <element signature="e#2175#2176#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2807,9 +2746,9 @@
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/db/SuperWeChatDBManager.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/db/UserDao.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatModel.java" />
-        <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatHelper.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ContactListFragment.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatHelper.java" />
       </list>
     </option>
   </component>
@@ -3472,7 +3411,13 @@
       <option name="project" value="LOCAL" />
       <updated>1478659719211</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="添加删除联系人的数据层操作">
+      <created>1478660593094</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1478660593094</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3561,7 +3506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="删掉SettingsActivity中零钱相关代码" />
     <MESSAGE value="少提交了的" />
     <MESSAGE value="修改个人资料界面布局" />
     <MESSAGE value="个人资料页面头像昵称微信号的显示" />
@@ -3586,7 +3530,8 @@
     <MESSAGE value="同意添加好友请求" />
     <MESSAGE value="联系人列表单击跳入用户详情，发消息跳入ChatActivity" />
     <MESSAGE value="删除黑名单项，解决Conversation和Contact中ViewPager和fragment冲突的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除黑名单项，解决Conversation和Contact中ViewPager和fragment冲突的问题" />
+    <MESSAGE value="添加删除联系人的数据层操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加删除联系人的数据层操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -3996,20 +3941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ContactListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
-          <folding>
-            <element signature="e#9720#9763#0" expanded="true" />
-            <element signature="e#9786#9834#0" expanded="true" />
-            <element signature="e#10637#11457#0" expanded="true" />
-            <element signature="e#11456#11457#0" expanded="true" />
-            <element signature="e#12146#12204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4051,10 +3982,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ContactListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+          <folding>
+            <element signature="e#9720#9763#0" expanded="true" />
+            <element signature="e#9786#9834#0" expanded="true" />
+            <element signature="e#10637#11457#0" expanded="true" />
+            <element signature="e#11456#11457#0" expanded="true" />
+            <element signature="e#12146#12204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/SuperWeChatHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23518851">
-          <caret line="760" column="25" selection-start-line="760" selection-start-column="25" selection-end-line="760" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.18671454">
+          <caret line="675" column="61" selection-start-line="675" selection-start-column="61" selection-end-line="675" selection-end-column="61" />
           <folding>
             <element signature="e#11660#11707#0" expanded="true" />
             <element signature="e#11945#11992#0" expanded="true" />
