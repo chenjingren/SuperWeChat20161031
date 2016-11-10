@@ -318,8 +318,8 @@ public class EaseContactListFragment extends EaseBaseFragment {
      * @param contactsMap
      */
     public void setContactsMap(Map<String, User> contactsMap){
-        this.contactsMap = contactsMap;
         contactsMap.remove(EMClient.getInstance().getCurrentUser());
+        this.contactsMap = contactsMap;
     }
     
     public interface EaseContactListItemClickListener {
