@@ -88,6 +88,7 @@ public class ContactListFragment extends EaseContactListFragment {
             //noinspection unchecked
             m = (Map<String, User>) ((Hashtable<String, User>)m).clone();
         }
+
         setContactsMap(m);
         super.refresh();
         if(inviteMessgeDao == null){

@@ -1132,7 +1132,7 @@ public class SuperWeChatHelper {
            @Override
            public void onSuccess(String s) {
                if (s != null) {
-                   Result result = ResultUtils.getResultFromJson(s, User.class);
+                   Result result = ResultUtils.getListResultFromJson(s, User.class);
                    if (result != null && result.isRetMsg()) {
                        List<User> list = (List<User>) result.getRetData();
                        if (list != null && list.size() > 0) {
