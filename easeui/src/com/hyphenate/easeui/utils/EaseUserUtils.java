@@ -7,6 +7,7 @@ import com.hyphenate.chat.EMClient;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.hyphenate.easeui.R;
+import android.util.Log;
 import com.hyphenate.easeui.controller.EaseUI;
 import com.hyphenate.easeui.controller.EaseUI.EaseUserProfileProvider;
 import com.hyphenate.easeui.domain.EaseUser;
@@ -82,20 +83,26 @@ public class EaseUserUtils {
             }*/
             if(user != null && user.getMUserNick() != null){
                 textView.setText(user.getMUserNick());
+                Log.e("EaseUserUtils.java....","setAppUserNick.user.getUserNick======"+user.getMUserNick());
             }else{
                 textView.setText(username);
+                Log.e("EaseUserUtils.java....","setAppUserNick.username======"+username);
             }
         }
     }
 
     public static void setAppUserAvatar(Context context, String username, ImageView imageView){
+        Log.e("EaseUserUtils.java...","username==="+username);
         User user = getAppUserInfo(username);
+        Log.e("EaseUserUtils.java....","setAppUserAvatar.user======"+user);
         if (user == null){
             user = new User(username);
+            Log.e("EaseUserUtils.java....","setAppUserAvatar.user======"+user);
         }
         if(user != null && user.getAvatar() != null){
             try {
                 int avatarResId = Integer.parseInt(user.getAvatar());
+                Log.e("EaseUserUtils.java....","user.getAvatar======"+user.getAvatar());
                 Glide.with(context).load(avatarResId).into(imageView);
             } catch (Exception e) {
                 //use default avatar
@@ -121,8 +128,11 @@ public class EaseUserUtils {
     }
 
     public static User getAppUserInfo(String username){
-        if(userProvider != null)
+        Log.e("EaseUserUtils.getAppUserInfo...","username==="+username);
+        if(userProvider != null){
+            Log.e("EaseUserUtils.getAppUserInfo...","getAppUser==="+userProvider.getAppUser(username));
             return userProvider.getAppUser(username);
+        }
         return null;
     }
 

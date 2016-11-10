@@ -20,6 +20,7 @@ import com.hyphenate.chat.EMConversation.EMConversationType;
 import com.hyphenate.chat.EMGroup;
 import com.hyphenate.chat.EMMessage;
 import com.hyphenate.easeui.R;
+import android.util.Log;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.domain.User;
 import com.hyphenate.easeui.model.EaseAtMessageHelper;
@@ -119,8 +120,11 @@ public class EaseConversationAdapter extends ArrayAdapter<EMConversation> {
             holder.name.setText(room != null && !TextUtils.isEmpty(room.getName()) ? room.getName() : username);
             holder.motioned.setVisibility(View.GONE);
         }else {
+            Log.e("EaseConversationAdapter","username11111======"+username);
             EaseUserUtils.setAppUserAvatar(getContext(), username, holder.avatar);
+            Log.e("EaseConversationAdapter","username22222======"+username);
             EaseUserUtils.setAppUserNick(username, holder.name);
+            Log.e("EaseConversationAdapter","username333333======"+username);
             holder.motioned.setVisibility(View.GONE);
         }
 

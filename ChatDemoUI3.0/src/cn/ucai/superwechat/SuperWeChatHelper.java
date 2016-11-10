@@ -231,7 +231,9 @@ public class SuperWeChatHelper {
 
             @Override
             public User getAppUser(String s) {
-                return getAppUserInfo(username);
+                Log.e("Helper.getAppUser.","s==="+s);
+                Log.e("Helper.getAppUserInfo.","info==="+getAppUserInfo(s));
+                return getAppUserInfo(s);
             }
         });
 
@@ -374,6 +376,7 @@ public class SuperWeChatHelper {
     }
 
     private User getAppUserInfo(String username) {
+        Log.e("Helper.getAppUserInfo.","username==="+username);
         // To get instance of EaseUser, here we get it from the user list in memory
         // You'd better cache it if you get it from your server
         User user = null;
@@ -384,6 +387,7 @@ public class SuperWeChatHelper {
             user = getRobotList().get(username);
         }*/
         user = getAppContactList().get(username);
+        Log.e("Helper.getAppUserInfo.","user==="+user);
         // if user is not in your contacts, set inital letter for him/her
         if(user == null){
             user = new User(username);

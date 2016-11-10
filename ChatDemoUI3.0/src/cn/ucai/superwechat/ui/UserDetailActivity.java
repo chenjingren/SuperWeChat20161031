@@ -2,6 +2,7 @@ package cn.ucai.superwechat.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -58,8 +59,12 @@ public class UserDetailActivity extends BaseActivity {
         ivBack.setVisibility(View.VISIBLE);
         tvTitle.setVisibility(View.VISIBLE);
         tvTitle.setText(R.string.userinfo_txt_profile);
-        EaseUserUtils.setAppUserAvatar(this,user.getMUserName(),profileImage);
-        EaseUserUtils.setAppUserNick(user.getMUserName(), tvUserinfoNick);
+        L.e(TAG,"00000000000000");
+        EaseUserUtils.setAppUserPathAvatar(this,user.getAvatar(),profileImage);
+        Log.e(TAG,"0000000000000011111111111111111");
+        Log.e(TAG,"UserDetailActivity.user.getUserNick===="+user.getMUserNick());
+        EaseUserUtils.setAppUserNick(user.getMUserNick(), tvUserinfoNick);
+        L.e(TAG,"00000000000000222222222222222222222222");
         EaseUserUtils.setAppUserName("", user.getMUserName(), tvUserinfoName);
 
         isFriend();
