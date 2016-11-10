@@ -51,7 +51,7 @@ public class UserProfileFragment extends Fragment {
 
     private void setUserInfo() {
         EaseUserUtils.setCurrentAppUserAvatar(getActivity(), mIvProfileAvatar);
-        EaseUserUtils.setCurrentAppUserNick(mTvProfileUsername);
+        EaseUserUtils.setCurrentAppUserNick(mTvProfileNickname);
         EaseUserUtils.setCurrentAppUserName(mTvProfileUsername);
     }
 
