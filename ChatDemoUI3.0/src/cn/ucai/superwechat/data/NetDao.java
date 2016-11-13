@@ -8,8 +8,10 @@ import com.hyphenate.chat.EMGroup;
 import java.io.File;
 
 import cn.ucai.superwechat.I;
+import cn.ucai.superwechat.SuperWeChatHelper;
 import cn.ucai.superwechat.bean.Result;
 import cn.ucai.superwechat.db.OkHttpUtils;
+import cn.ucai.superwechat.utils.L;
 import cn.ucai.superwechat.utils.MD5;
 
 /**
@@ -132,4 +134,20 @@ public class NetDao {
                 .execute(listener);
     }
 
+    public static void addGroupMembers(Context context, EMGroup emGroup, OkHttpUtils.OnCompleteListener<String> listener){
+        String memberArr = "";
+        for (String m:emGroup.getMembers()){
+            if(!m.equals(SuperWeChatHelper.getInstance().getCurrentUsernName())) {
+                memberArr += m + ",";
+            }
+        }
+        memberArr = memberArr.substring(0,memberArr.length()-1);
+        L.e("addGroupMembers","memberArr="+memberArr);
+        OkHttpUtils<String> utils = new OkHttpUtils<>(context);
+        utils.setRequestUrl(I.REQUEST_ADD_GROUP_MEMBERS)
+                .addParam(I.Member.GROUP_HX_ID,emGroup.getGroupId())
+                .addParam(I.Member.USER_NAME,memberArr)
+                .targetClass(String.class)
+                .execute(listener);
+    }
 }
