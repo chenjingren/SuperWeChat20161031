@@ -107,7 +107,7 @@ public class AddContactActivity extends BaseActivity {
                     if (result!=null && result.isRetMsg()){
                         User u = (User) result.getRetData();
                         if (u!=null){
-                            MFGT.gotoUserDetail(AddContactActivity.this,u);
+                            MFGT.gotoUserDetail(AddContactActivity.this,u.getMUserName());
                         }
                     }else {
                         CommonUtils.showLongToast(R.string.msg_104);

@@ -56,10 +56,10 @@ public class MFGT {
         startActivity(activity, AddContactActivity.class);
     }
 
-    public static void gotoUserDetail(Activity activity, User user) {
+    public static void gotoUserDetail(Activity activity, String username) {
         Intent intent = new Intent();
         intent.setClass(activity,UserDetailActivity.class);
-        intent.putExtra(I.User.USER_NAME,user);
+        intent.putExtra(I.User.USER_NAME,username);
         startActivity(activity,intent);
     }
 
