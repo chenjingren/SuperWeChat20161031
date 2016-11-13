@@ -75,5 +75,6 @@ public class MFGT {
         intent.setClass(activity,ChatActivity.class);
         intent.putExtra("userId",userId);
         startActivity(activity,intent);
+
     }
 }
